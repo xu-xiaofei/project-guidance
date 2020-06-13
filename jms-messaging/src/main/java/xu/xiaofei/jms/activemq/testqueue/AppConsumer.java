@@ -1,4 +1,4 @@
-package activemq.testqueue;
+package xu.xiaofei.jms.activemq.testqueue;
 
 /**
  * @Author fei

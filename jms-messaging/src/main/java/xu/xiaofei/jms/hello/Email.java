@@ -1,4 +1,4 @@
-package hello;
+package xu.xiaofei.jms.hello;
 
 public class Email {
 

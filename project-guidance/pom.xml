@@ -13,6 +13,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <groupId>org.example</groupId>
@@ -23,6 +25,8 @@
         <module>../auto-configure-test</module>
         <module>../jms-messaging-stomp-websocket</module>
         <module>../jms-messaging</module>
+        <module>../webflux-reactive-programming</module>
+        <module>../graphql-with-spring-boot</module>
     </modules>
 
     <dependencies>

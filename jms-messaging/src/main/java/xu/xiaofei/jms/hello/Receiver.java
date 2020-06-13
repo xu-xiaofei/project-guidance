@@ -1,4 +1,4 @@
-package hello;
+package xu.xiaofei.jms.hello;
 
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
