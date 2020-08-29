@@ -27,6 +27,8 @@
         <module>../jms-messaging</module>
         <module>../webflux-reactive-programming</module>
         <module>../graphql-with-spring-boot</module>
+        <module>../jms-messaging-receiver-test</module>
+        <module>../cache-with-springboot</module>
     </modules>
 
     <dependencies>
@@ -35,5 +37,15 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>project_guidance</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

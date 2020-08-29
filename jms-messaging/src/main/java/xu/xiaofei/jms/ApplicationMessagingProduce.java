@@ -10,16 +10,19 @@ import xu.xiaofei.jms.hello.Email;
 
 @SpringBootApplication
 @EnableJms
-public class Application {
+public class ApplicationMessagingProduce {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// Launch the application
-		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(ApplicationMessagingProduce.class, args);
 
 		JmsTemplate jmsTemplate = context.getBean(JmsTemplate.class);
 		// Send a message with a POJO - the template reuse the message converter
-		System.out.println("Sending an email message.");
-		jmsTemplate.convertAndSend("mailbox", new Email("info@example.com", "Hello"));
-	}
+		while (true) {
+			System.out.println("Sending an email message.");
+			jmsTemplate.convertAndSend("http://localhost:9091/mailbox", new Email("info@example.com", "Hello"));
+			Thread.sleep(1000);
+		}
+}
 
 }

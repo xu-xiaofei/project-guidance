@@ -7,19 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jms-messaging" />
+        <module name="auto-configure-test" />
+        <module name="cache-with-springboot" />
+        <module name="jms-messaging-receiver-test" />
         <module name="webflux-reactive-programming" />
         <module name="graphql-with-spring-boot" />
         <module name="jms-messaging-stomp-websocket" />
-        <module name="auto-configure-test" />
-        <module name="jms-messaging" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auto-configure-test" options="-parameters" />
+      <module name="cache-with-springboot" options="-parameters" />
       <module name="graphql-with-spring-boot" options="-parameters" />
       <module name="jms-messaging" options="-parameters" />
+      <module name="jms-messaging-receiver-test" options="-parameters" />
       <module name="jms-messaging-stomp-websocket" options="-parameters" />
       <module name="webflux-reactive-programming" options="-parameters" />
     </option>
